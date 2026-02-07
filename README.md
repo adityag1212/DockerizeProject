@@ -5,8 +5,25 @@ An RPO focused on dockerizing a small application project, then containerizing i
 ```Building a docker image```
 * docker build -t <image_name> <path_to_docker_file>
 
-```Pushing a docker image to docker registry```
-* docker push <image_name>:<tag> <image_name>:<tag>
+# Docker Usage Guide
 
-```Spinning up a docker container```
-* docker run -dp 3000:3000 <image_name>:<tag>
+## Pushing a Docker Image to Docker Registry
+
+```bash
+docker push <image_name>:<tag>
+```
+
+## Spinning Up a Docker Container
+
+```bash
+docker run -dp 3000:3000 <image_name>:<tag>
+```
+
+## Notes
+- Replace `<image_name>` with your Docker image name (e.g., `my-app`)
+- Replace `<tag>` with the image tag (e.g., `latest`)
+- Login to Docker before pushing images:
+
+```bash
+docker login
+```

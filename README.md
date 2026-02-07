@@ -2,10 +2,10 @@
 
 An RPO focused on dockerizing a small application project, then containerizing it using Docker. The scope includes writing a Dockerfile, configuring dependencies and environment variables, and ensuring the app runs consistently across environments through Dockerized deployment.
 
-```Building a docker image```
-* docker build -t <image_name> <path_to_docker_file>
-
-# Docker Usage Guide
+## Building a docker image
+```bash
+docker build -t <image_name> <path_to_docker_file>
+```
 
 ## Pushing a Docker Image to Docker Registry
 
